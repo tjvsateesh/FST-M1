@@ -1,0 +1,10 @@
+select customer_id ID, customer_name NAME from CUSTOMERS
+where customer_id IN(
+    select customer_id from ORDERS
+    group by customer_id
+    having count(*) > 1)
+UNION
+select salesman_id, salesman_name from salesman
+where salesman_id IN (select salesman_id from ORDERS
+    group by salesman_id
+    having count(*) > 1);

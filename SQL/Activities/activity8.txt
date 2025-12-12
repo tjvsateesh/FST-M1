@@ -1,0 +1,13 @@
+SELECT customer_id, MAX(purchase_amount) higest_purchase_made
+FROM orders
+GROUP BY customer_id;
+
+SELECT salesman_id, order_date, MAX(purchase_amount) higest_purchase_made
+FROM orders
+WHERE TO_CHAR(order_date, 'YYYY-MM-DD') LIKE '2012-08-17'
+GROUP BY salesman_id, order_date;
+
+SELECT customer_id, order_date, MAX(purchase_amount) higest_purchase_made 
+FROM orders
+GROUP BY customer_id, order_date
+HAVING MAX(purchase_amount) IN(2030, 3450, 5760, 6000);
