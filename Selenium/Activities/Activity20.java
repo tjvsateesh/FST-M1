@@ -16,8 +16,8 @@ public class Activity20 {
 		
 		System.out.println("Title of the page: "+ driver.getTitle());
 		
-		WebElement confirmBtn = driver.findElement(By.id("prompt"));
-		confirmBtn.click();
+		WebElement promptBtn = driver.findElement(By.id("prompt"));
+		promptBtn.click();
 		
 		Alert alert = driver.switchTo().alert();
 		
@@ -34,3 +34,4 @@ public class Activity20 {
 	}
 
 }
+
