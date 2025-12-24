@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="ProjectSuite">
+	<test name="SuiteTests">
+		<classes>
+			<class name="project.Activity1" />
+			<class name="project.Activity4" />
+			<class name="project.Activity5" />
+			<class name="project.Activity6" />
+			<class name="project.Activity7" />
+			<class name="project.Activity8" />
+			<class name="project.Activity9" />
+		</classes>
+	</test>
+</suite>
